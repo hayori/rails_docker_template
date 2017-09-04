@@ -9,6 +9,6 @@ docker-compose run --rm rails rails webpacker:install
 docker-compose run --rm rails rails webpacker:install:react
 
 cp -f template/database.yml config/database.yml
-cp -f template/development.server.yml config/webpack/development.server.yml
+cp -f template/webpacker.yml config/webpacker.yml
 
 docker-compose run --rm rails bundle exec spring binstub --all

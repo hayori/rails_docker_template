@@ -9,6 +9,6 @@ docker-compose run --rm rails rails new . --force --database=postgresql --skip-b
 
 cp -f template/database.yml config/database.yml
 cp -f template/webpacker.yml config/webpacker.yml
-cp -f template/gitignore config/.gitignore
+cp -f template/gitignore .gitignore
 
 docker-compose run --rm rails bundle exec spring binstub --all
